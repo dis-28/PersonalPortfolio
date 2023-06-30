@@ -10,52 +10,257 @@ body {
 
 }
 
-#header {
-    width: 100%;
-    height: 2.8em;
+.Slide {
+    height: 570px;
     background-color: aliceblue;
     display: flex;
+    flex-direction: column;
     align-items: center;
+
+
+}
+
+#header {
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: top;
     justify-content: right;
-    gap: 0.8em;
-    padding: 0 40px 0;
+    gap: 0.6em;
+    padding: 20px 40px 0;
 }
 
 .HeaderLinks {
     text-decoration: none;
     font-size: 0.9em;
     color: black;
+    background-color: #Fff;
+    border: 1px none black;
+    height: 1.3em;
+    width: 5em;
+    border-radius: 5px;
+    padding: 1px 2px 1px 2px;
+    transition: 0.4s;
 }
 
-a::after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    background-color: brown;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
+.HeaderLinks:hover {
+    color: white;
+    background-color: #343a40;
 }
+
 
 .HeaderTitle {
     color: black;
-    position: fixed;
+    position: absolute;
     left: 10px;
 }
 
-.downloadResume {
-    background-color: bisque;
-    columns: black;
-    width: 5em;
-    height: 1.5em;
-    border-radius: 5px;
-    padding: 1px 4px 2px 4px;
-    border: 1.5px solid black;
+/* introSection */
+
+.intro {
+    border: 1px solid black;
+    height: 260px;
+    width: 550px;
+    margin: 100px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+    gap: 4px;
+}
+
+.intro_S {
+    color: black;
+    text-align: left;
+}
+
+.intro_B {
+    color: black;
+    text-align: left;
+
+}
+
+.intro_T {
+    color: black;
+    text-align: left;
+
+}
+
+.intro_C {
+    color: black;
+    text-align: left;
+
+}
+
+.intro_D {
+    color: black;
+    text-align: left;
+    width: 300px;
+
+}
+
+.dropdown {
+    position: relative;
+    left: 0;
+    width: 150px;
+    margin-top: 5px;
+    margin: 0;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: calc(100%+0.25rem);
+    background-color: white;
+    color: black;
+    padding: 0.75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 144px;
+}
+
+.dropdown.active>.link+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 
+/* timeline */
+
+.timelineSlide {
+    height: 570px;
+    background-color: #8a817c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timeline {
+    background-color: #bcb8b1;
+    height: 100%;
+    width: 90%;
+    padding: 20px 20px 20px 20px;
+    gap: 40px;
+}
+
+.containerL {
+    position: relative;
+    left: 15%;
+    width: 30%;
+    background-color: #dcdcdd;
+    height: 20%;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+.containerR {
+    position: relative;
+    left: 55%;
+    width: 30%;
+    background-color: #dcdcdd;
+    height: 20%;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+.containerR:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.containerL:nth-child(3) {
+    animation-delay: 3s;
+}
+
+.containerR:nth-child(4) {
+    animation-delay: 4s;
+}
 
 
+.containerTextL {
+    position: relative;
+    left: 30%;
+}
+
+.containerTextR {
+    position: relative;
+    left: 20%;
+    border: 1px solid black;
+}
+
+.containerimgleft {
+    border-radius: 50%;
+    width: 40px;
+    position: relative;
+    left: 245px;
+    z-index: 11;
+}
+
+.containerimgright {
+    border-radius: 50%;
+    width: 40px;
+    position: relative;
+    left: -75px;
+    z-index: 2;
+
+}
+
+
+.timelineHead {
+    color: black;
+}
+
+.timelineDet {
+    color: black;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 60%;
+    background-color: white;
+    top: 110%;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
+    animation: moveline 6s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 70%;
+    }
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
