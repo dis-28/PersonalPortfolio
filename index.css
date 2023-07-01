@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -25,15 +31,25 @@
     padding: 20px 40px 0;
 }
 
+.Resume {
+    text-decoration: none;
+    font-size: 15px;
+    color: #582f0e;
+    height: 1.3em;
+    width: 5em;
+    padding: 1px 4px 4px 4px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
 .HeaderLinks {
     text-decoration: none;
-    font-size: 0.9em;
-    color: #afa060;
+    font-size: 15px;
+    color: #8b5e34;
     height: 1.3em;
     width: 5em;
     border-radius: 5px;
     padding: 1px 2px 1px 2px;
-    transition: 0.4s;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -41,7 +57,9 @@
 .HeaderTitle {
     color: #774936;
     position: absolute;
-    left: 10px;
+    left: 30px;
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 25px;
 }
 
 /* introSection */
@@ -53,24 +71,27 @@
     display: flex;
     flex-direction: column;
     padding: 10px 20px 10px 20px;
-    gap: 4px;
+    gap: 5px;
 }
 
 .intro_S {
     color: #6f4518;
     text-align: left;
+    font-size: 15px;
 }
 
 .intro_B {
     color: #583101;
     text-align: left;
-
+    font-size: 50px;
+    font-family: 'Concert One', cursive;
 }
 
 .intro_C {
     color: #a47148;
     text-align: left;
-
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -78,7 +99,7 @@
     color: #a47148;
     text-align: left;
     width: 300px;
-
+    font-family: 'Barlow', sans-serif;
 }
 
 .dropdown {
@@ -88,22 +109,29 @@
     margin-top: 5px;
     margin: 0;
     border-radius: 30;
+    display: flex;
+    justify-content: left;
 }
 
 .link {
     border-radius: 20px;
-    padding: 2px 4px 2px 4px;
+    padding: 6px 12px 6px 12px;
+    font-size: 15px;
+    background-color: #a47148;
+    color: white;
+    border: 0;
+    font-size: 13px;
+    font-family: 'Barlow', sans-serif;
 }
 
 .dropdown-menu {
     position: absolute;
     left: 0;
+    top: 33px;
     top: calc(100%+0.25rem);
     background-color: #fefae0;
     color: black;
-    padding: 0.75rem;
     border-radius: .25rem;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
@@ -112,6 +140,17 @@
     flex-direction: column;
     gap: 4px;
     width: 144px;
+    align-items: left;
+}
+
+.dropLinks {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #606c38;
+    height: 1.3em;
+    width: 5em;
+    border-radius: 5px;
+    padding: 1px 2px 1px 2px;
 }
 
 .dropdown.active>.link+.dropdown-menu {
