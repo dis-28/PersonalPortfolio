@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Siddharth Kashyap</title>
     <link href="./index.css" rel="stylesheet" type="text/css">
+    <link href="./myWork.css" rel="stylesheet" type="text/css">
+    <link href="./contact.css" rel="stylesheet" type="text/css">
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="./app.js" defer></script>
 </head>
 
@@ -15,7 +18,7 @@
     </div> -->
     <div class="Slide">
         <div id="header" class="sections">
-            <p class="HeaderTitle">Siddharth Kashap.</p>
+            <p class="HeaderTitle">Siddharth K.</p>
             <a href="" class="HeaderLinks">About</a>
             <a href="" class="HeaderLinks">TimeLine</a>
             <a href="" class="HeaderLinks">MyWork</a>
@@ -29,12 +32,12 @@
             <p class="intro_D">I am currently a Pre-Final year student at IIT Guwahati. Currently i am exploring the
                 field of Web Developement</p>
             <div class="dropdown" data-dropdown>
-                <button class="link" data-dropdown-button>Check Out my Porfiles!</button>
+                <button class="link" data-dropdown-button>More!!</button>
                 <div class="dropdown-menu">
-                    <a href="">LinkedIn</a>
-                    <a href="">LeetCode</a>
-                    <a href="">CodeChef</a>
-                    <a href="">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sk2803/">LinkedIn</a>
+                    <a href="https://leetcode.com/siddharth_kashyap/">LeetCode</a>
+                    <a href="https://www.codechef.com/users/kashyapsidiitg">CodeChef</a>
+                    <a href="https://github.com/dis-28">GitHub</a>
                 </div>
             </div>
 
@@ -48,51 +51,87 @@
                     <p class="timelineDet">
                         Year:2019
                     </p>
-                    <p class="timelineDet">
-                        Percentage:94.6%
-                    </p>
+
                 </div>
                 <img src="./Images/cbse.jpeg" alt="" class="containerimgleft">
             </div>
             <div class="containerR">
                 <img src="./Images/cbse.jpeg" alt="" class="containerimgright">
                 <div class="containerTextR">
-                    <p class="timelineHead">CBSE CLASS-10</p>
+                    <p class="timelineHead">CBSE CLASS-12</p>
                     <p class="timelineDet">
-                        Year:2019
+                        Year:2021
                     </p>
-                    <p class="timelineDet">
-                        Percentage:94.6%
-                    </p>
+
                 </div>
             </div>
             <div class="containerL">
                 <div class="containerTextL">
-                    <p class="timelineHead">CBSE CLASS-10</p>
+                    <p class="timelineHead">IIT Guwahati</p>
                     <p class="timelineDet">
-                        Year:2019
-                    </p>
-                    <p class="timelineDet">
-                        Percentage:94.6%
+                        Year:2021-Present
                     </p>
                 </div>
-                <img src="./Images/cbse.jpeg" alt="" class="containerimgleft">
+                <img src="./Images/iitg.png" alt="" class="containerimgleft">
             </div>
             <div class="containerR">
-                <img src="./Images/cbse.jpeg" alt="" class="containerimgright">
+                <img src="./Images/noqs.jpeg" alt="" class="containerimgright">
                 <div class="containerTextR">
-                    <p class="timelineHead">CBSE CLASS-10</p>
+                    <p class="timelineHead">Web Dev Intern at Noqs</p>
                     <p class="timelineDet">
-                        Year:2019
-                    </p>
-                    <p class="timelineDet">
-                        Percentage:94.6%
+                        Year:2023
                     </p>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="projectText">
+        My projects!!
+    </div>
+    <div class="workDisplay">
+        <div class="works">
+            <p class="projectName">
+                CHeSTA
+            </p>
+            <p class="projectDescription">
+                A website for student association which aims boosting connectivity with juniors and senior.
+            </p>
+        </div>
+        <div class="works">
+            <p class="projectName">
+                NoWay
+            </p>
+            <p class="projectDescription">
+                Uses Djkastra Algorithm to find the shortest distance between any two places inside the campus of
+                IITG.
+            </p>
+        </div>
+        <div class="works">
+            <p class="projectName">
+                JOSSAA
+            </p>
+            <p class="projectDescription">
+                Aims to help student choose thier college based opon thier rank, helps to analyse based opon popularity,
+                rank and location.
+            </p>
+        </div>
+    </div>
+    <div class="contactSection">
+        <p class="message_s">
+            What's Next?
+        </p>
+        <p class="message_B">
+            Get In Touch
+        </p>
+        <div class="messageMain">
+            <form onsubmit="sendEmail(); reset(); return flase;">
+                <input type="text" id="'name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email id" required>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="How can i help you"> </textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

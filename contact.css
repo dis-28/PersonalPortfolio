@@ -1,0 +1,56 @@
+.contactSection {
+    height: 570px;
+    background-color: #ccd5ae;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 50px;
+}
+
+
+
+.messageMain {
+    height: 300px;
+    width: 300x;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    background-color: white;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 2vw 4vw;
+    width: 300px;
+    max-width: 600px;
+    border-radius: 10px;
+    border-radius: 20px;
+}
+
+form input,
+textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 10px;
+    outline: none;
+    background: #edf6f9;
+    font-size: 16px;
+    max-width: 200px;
+}
+
+form button {
+    padding: 15px;
+    background-color: #83c5be;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    cursor: pointe;
+    width: 100px;
+    margin: 5px auto;
+    border-radius: 30px;
+}

@@ -14,3 +14,17 @@ document.addEventListener('click', e => {
         dropdown.classList.remove("active");
     })
 })
+
+function sendEmail() {
+    Email.send({
+        Host: "smtp.gmail.com",
+        Username: "mailboxsid28@gmail.com",
+        Password: "Gallardo2803",
+        To: 'mailboxsid28@gmail.com',
+        From: document.getElementById('email').value,
+        Subject: "new contact from enquiry",
+        Body: "And this is the body"
+    }).then(
+        message => alert(message)
+    );
+}
